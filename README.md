@@ -15,16 +15,24 @@ This is a simple barebones API boilerplate that has JWT configured for authentic
 ## Development
 
 Run migrations with the following command:
-`dotnet ef database update`
+```
+dotnet ef database update
+```
 
 To make a new migration:
-`dotnet ef migrations add MigrationName`
+```
+dotnet ef migrations add MigrationName
+```
 
 To remove a migration:
-`dotnet ef migrations remove`
+```
+dotnet ef migrations remove
+```
 
 To run the project:
-`dotnet run`
+```
+dotnet run
+```
 
 ## To Do
 - [ ] Change password hash to Bcrypt
