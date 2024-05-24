@@ -21,13 +21,19 @@ Run subsequent migrations:
 `dotnet ef database update`
 
 To make a new migration:
-`dotnet ef migrations add MigrationName`
+```
+dotnet ef migrations add MigrationName
+```
 
 To remove a migration:
-`dotnet ef migrations remove`
+```
+dotnet ef migrations remove
+```
 
 To run the project:
-`dotnet run`
+```
+dotnet run
+```
 
 ---
 
