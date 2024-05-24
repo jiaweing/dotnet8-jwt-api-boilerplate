@@ -6,9 +6,11 @@ namespace Api.Application.Controllers
 {
     public class AdminController : Controller
     {
-        [HttpGet]
+        /// <summary>
+        /// Sample admin dashboard page for users with the admin role
+        /// </summary>
         [Authorize(Policy = CustomRoles.Admin)]
-        [Route("admin/dashboard")]
+        [HttpGet("admin/dashboard")]
         public IActionResult Dashboard()
         {
             return Ok("Welcome Admin");

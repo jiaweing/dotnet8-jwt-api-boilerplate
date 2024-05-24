@@ -13,15 +13,20 @@ namespace Api.Application.Controllers
             _db = db;
         }
 
-        [HttpGet]
-        [Route("")]
+        /// <summary>
+        /// Sample home page for anyone including unauthenticated users
+        /// </summary>
+        [HttpGet("")]
         public IActionResult Index()
         {
             return Ok("Welcome to My Api");
         }
 
-        [HttpGet, Authorize]
-        [Route("dashboard")]
+        /// <summary>
+        /// Sample dashboard page for authenticated users
+        /// </summary>
+        [Authorize]
+        [HttpGet("dashboard")]
         public IActionResult Dashboard()
         {
             return Ok("Welcome to Api Dashboard");
