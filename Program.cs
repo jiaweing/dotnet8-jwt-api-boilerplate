@@ -1,7 +1,6 @@
-using Serilog;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Antiforgery;
 using Api.Application.Startup;
+using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 EnvManager.LoadConfig();
 

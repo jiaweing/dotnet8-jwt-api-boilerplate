@@ -15,10 +15,11 @@ namespace Api.Application.Services.Auth
 
         public JwtService(
             RoleService roleService,
-            IWebHostEnvironment env
+            IConfiguration configuration
         )
         {
             _roleService = roleService;
+            _configuration = configuration;
         }
 
         public async Task<JwtAccessToken> CreateJwtAccessToken(User user)

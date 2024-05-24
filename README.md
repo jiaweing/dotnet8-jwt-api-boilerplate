@@ -1,6 +1,6 @@
 # Dotnet 8 API Boilerplate with MySQL & JWT Auth 
 
-This is a simple barebones API boilerplate that has JWT configured for authentication and database setup with MySQL. No framework required, just pure dotnet 8. Sample controllers are also included for role authorization.
+This is a simple barebones API boilerplate that has JWT configured for authentication and database setup with MySQL. As well as all the basic things to get started like Serilog, Rate Limits and Swagger properly configured. No framework lockins, only dotnet. Sample controllers are also included for role authorization.
 
 ## Features
 - MySQL Database with EFCore
@@ -14,7 +14,10 @@ This is a simple barebones API boilerplate that has JWT configured for authentic
 
 ## Development
 
-Run migrations with the following command:
+Run initial migrations on first setup:
+`dotnet ef database update`
+
+Run subsequent migrations:
 `dotnet ef database update`
 
 To make a new migration:
@@ -25,10 +28,6 @@ To remove a migration:
 
 To run the project:
 `dotnet run`
-
-## To Do
-- [ ] Change password hash to Bcrypt
-- [ ] Add email verification
 
 ---
 
