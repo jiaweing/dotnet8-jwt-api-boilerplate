@@ -17,10 +17,14 @@ No framework lock-ins, only dotnet. Sample controllers are also included for rol
 ## Development
 
 Run initial migrations on first setup:
-`dotnet ef database update`
+```
+dotnet ef database update
+```
 
 Run subsequent migrations:
-`dotnet ef database update`
+```
+dotnet ef database update
+```
 
 To make a new migration:
 ```
