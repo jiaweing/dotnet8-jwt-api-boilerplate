@@ -14,7 +14,7 @@ namespace Api.Application.Startup
             string connectionString = $"server={host};port={port};database={database};user={username};password={password};";
             services.AddDbContext<T>(delegate (DbContextOptionsBuilder options)
             {
-                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)).UseSnakeCaseNamingConvention();
             });
 
             return services;
