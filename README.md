@@ -2,7 +2,7 @@
 
 This is a simple barebones API boilerplate that has JWT configured for authentication and database setup with MySQL. As well as all the basic things to get started like Serilog, Rate Limits and Swagger properly configured.
 
-No framework lock-ins, only dotnet. Sample controllers are also included for role authorization.
+No framework lock-ins, zero abstractions, full control over all the code, only dotnet. Sample controllers are also included for role authorization.
 
 ## Features
 - MySQL Database with EFCore
