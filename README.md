@@ -44,6 +44,4 @@ dotnet run
 ---
 
 ## License
-A large portion of the code was adopted from the Spark framework but they dropped support for Web API in version 2 so I decided to create my own. I also didn't want to rely on a framework to get the auth implemented.
-
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
